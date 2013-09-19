@@ -1,0 +1,152 @@
+﻿body
+{
+    margin: 0;
+    padding: 0;
+    font-family: Tahoma, Arial, sans-serif,;
+    font-size: 9pt;
+    color: #666;
+}
+.uiInfoTable
+{
+    border: 0;
+    border-collapse: collapse;
+    border-spacing: 0;
+    width: 100%;
+}
+.uiInfoTable .spacer td
+{
+    padding: 5px 0;
+}
+.noBorder .spacer td
+{
+    padding: 0;
+    visibility: hidden;
+}
+.uiInfoTable .label, .uiInfoTable .data, .uiInfoTable .rightCol
+{
+    padding: 3px 0 1px 0;
+    text-align: left;
+    vertical-align: top;
+}
+.uiInfoTable .dataRow .data, .uiInfoTable .dataRow .rightCol
+{
+    padding-top: 5px;
+}
+.uiInfoTable .data > input, .uiInfoTable .data > label input, .uiInfoTable .rightCol > input, .uiInfoTable .rightCol > label input
+{
+    margin-left: 0;
+}
+.uiInfoTable .label
+{
+    color: #666;
+    font-weight: bold;
+    padding-right: 10px;
+    text-align: right;
+    width: 130px;
+}
+.uiInfoTable .dataRow .label
+{
+    padding-top: 8px;
+}
+.uiInfoTable .label .annotation
+{
+    color: #999;
+}
+.uiInfoTable .rightCol
+{
+    padding: 0 0 0 20px;
+    width: 225px;
+}
+#bootloader_InDi1
+{
+    height: 42px;
+}
+A:link
+{
+    text-decoration: none;
+}
+A:visited
+{
+    text-decoration: none;
+}
+A:active
+{
+    text-decoration: none;
+}
+A:hover
+{
+    text-decoration: underline overline;
+    color: green;
+}
+
+#pageHead
+{
+    height: 50px;
+    background-color: #fff;
+}
+#contentArea
+{
+    margin: 20px 100px 20px 100px;
+}
+#contentPanel
+{
+    margin: 10px;
+    min-width: 400px;
+}
+
+.fontHead
+{
+    color: #666;
+    font-weight: bold;
+    font-size: 12pt;
+}
+#blockLogin
+{
+    padding: 10px;
+    background-color: #fff;
+    border: solid 1px #666;
+    min-width: 450px;
+    margin: 5px 300px 5px 300px;
+}
+.blockTextHeader
+{
+    background-color: #FFFFCC;
+    border: solid 1px #FFCC33;
+    padding: 10px;
+    text-align: center;
+}
+.panelLeft
+{
+    background-color: #fff;
+    padding: 10px;
+    text-align: left;
+    float: left;
+    width: 60%;
+}
+.panelRight
+{
+    background-color: #fff;
+    padding: 10px;
+    text-align: left;
+    float: left;
+    width: 35%;
+    margin-left: 10px;
+}
+
+#pageFooter
+{
+    height: 30px;
+    background-color: #fff;
+}
+.clearDiv
+{
+    clear: both;
+}
+.submitLink {
+   color: #00f;
+   background-color: transparent;
+   text-decoration: underline;
+   border: none;
+   cursor: pointer;
+   cursor: hand;
+  }

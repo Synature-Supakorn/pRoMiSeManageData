@@ -1,0 +1,408 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProductVersion>9.0.30729</ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{9C50793A-7AB3-4DF6-A621-F5E439F13CA1}</ProjectGuid>
+    <ProjectTypeGuids>{349c5851-65df-11da-9384-00065b846f21};{F184B08F-C81C-45F6-A57F-5ABD9991F28F}</ProjectTypeGuids>
+    <OutputType>Library</OutputType>
+    <RootNamespace>POSManageDataForWeb</RootNamespace>
+    <AssemblyName>POSManageDataForWeb</AssemblyName>
+    <TargetFrameworkVersion>v3.5</TargetFrameworkVersion>
+    <OptionExplicit>On</OptionExplicit>
+    <OptionCompare>Binary</OptionCompare>
+    <OptionStrict>Off</OptionStrict>
+    <OptionInfer>On</OptionInfer>
+    <FileUpgradeFlags>
+    </FileUpgradeFlags>
+    <UpgradeBackupLocation>
+    </UpgradeBackupLocation>
+    <OldToolsVersion>3.5</OldToolsVersion>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <DefineDebug>true</DefineDebug>
+    <DefineTrace>true</DefineTrace>
+    <OutputPath>bin\</OutputPath>
+    <DocumentationFile>POSManageDataForWeb.xml</DocumentationFile>
+    <NoWarn>42016,41999,42017,42018,42019,42032,42036,42020,42021,42022,42353,42354,42355</NoWarn>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <DefineDebug>false</DefineDebug>
+    <DefineTrace>true</DefineTrace>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\</OutputPath>
+    <DocumentationFile>POSManageDataForWeb.xml</DocumentationFile>
+    <NoWarn>42016,41999,42017,42018,42019,42032,42036,42020,42021,42022,42353,42354,42355</NoWarn>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="AMS.Profile, Version=2.0.1874.1294, Culture=neutral">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\..\ClassLibrary\pRoMiSeManageData\AMS.Profile.dll</HintPath>
+    </Reference>
+    <Reference Include="CLRUtility, Version=1.2012.2.1, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\..\ClassLibrary\Connection\pRoMiSe6\MySQL\CLRUtility.dll</HintPath>
+    </Reference>
+    <Reference Include="DbConnLog, Version=1.0.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\..\ClassLibrary\Connection\pRoMiSe6\MySQL\DbConnLog.dll</HintPath>
+    </Reference>
+    <Reference Include="MySql.Data, Version=6.2.4.0, Culture=neutral, PublicKeyToken=c5687fc88969c44d, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\..\ClassLibrary\Connection\pRoMiSe6\MySQL\MySql.Data.dll</HintPath>
+    </Reference>
+    <Reference Include="POSLanguage, Version=1.0.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\..\ClassLibrary\Connection\pRoMiSe6\MySQL\POSLanguage.dll</HintPath>
+    </Reference>
+    <Reference Include="POSMySQL, Version=6.0.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\..\ClassLibrary\Connection\pRoMiSe6\MySQL\POSMySQL.dll</HintPath>
+    </Reference>
+    <Reference Include="POSTypeClass, Version=1.0.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\..\ClassLibrary\pRoMiSeManageData\POSTypeClass.dll</HintPath>
+    </Reference>
+    <Reference Include="pRoMiSe ManageData Class, Version=1.0.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\..\ClassLibrary\pRoMiSeManageData\pRoMiSe ManageData Class.dll</HintPath>
+    </Reference>
+    <Reference Include="pRoMiSeProgramProperty, Version=1.0.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\..\ClassLibrary\pRoMiSeManageData\pRoMiSeProgramProperty.dll</HintPath>
+    </Reference>
+    <Reference Include="pRoMiSeUtil, Version=1.0.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\..\ClassLibrary\pRoMiSeManageData\pRoMiSeUtil.dll</HintPath>
+    </Reference>
+    <Reference Include="System" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Core">
+      <RequiredTargetFramework>3.5</RequiredTargetFramework>
+    </Reference>
+    <Reference Include="System.Data.DataSetExtensions">
+      <RequiredTargetFramework>3.5</RequiredTargetFramework>
+    </Reference>
+    <Reference Include="System.Web.Extensions">
+      <RequiredTargetFramework>3.5</RequiredTargetFramework>
+    </Reference>
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml.Linq">
+      <RequiredTargetFramework>3.5</RequiredTargetFramework>
+    </Reference>
+    <Reference Include="System.Web" />
+    <Reference Include="System.Xml" />
+    <Reference Include="System.Configuration" />
+    <Reference Include="System.Web.Services" />
+    <Reference Include="System.EnterpriseServices" />
+    <Reference Include="System.Web.Mobile" />
+    <Reference Include="ZipForge2003, Version=2.0.3.0, Culture=neutral, PublicKeyToken=3a6e82ca8e39718a">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\..\ClassLibrary\Connection\pRoMiSe6\MySQL\ZipForge2003.dll</HintPath>
+    </Reference>
+  </ItemGroup>
+  <ItemGroup>
+    <Import Include="Microsoft.VisualBasic" />
+    <Import Include="System" />
+    <Import Include="System.Collections" />
+    <Import Include="System.Collections.Generic" />
+    <Import Include="System.Data" />
+    <Import Include="System.Linq" />
+    <Import Include="System.Xml.Linq" />
+    <Import Include="System.Diagnostics" />
+    <Import Include="System.Collections.Specialized" />
+    <Import Include="System.Configuration" />
+    <Import Include="System.Text" />
+    <Import Include="System.Text.RegularExpressions" />
+    <Import Include="System.Web" />
+    <Import Include="System.Web.Caching" />
+    <Import Include="System.Web.SessionState" />
+    <Import Include="System.Web.Security" />
+    <Import Include="System.Web.Profile" />
+    <Import Include="System.Web.UI" />
+    <Import Include="System.Web.UI.WebControls" />
+    <Import Include="System.Web.UI.WebControls.WebParts" />
+    <Import Include="System.Web.UI.HtmlControls" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="Default.aspx" />
+    <Content Include="images\25-1.gif" />
+    <Content Include="images\add.png" />
+    <Content Include="images\add2.png" />
+    <Content Include="images\arrow_down_green.gif" />
+    <Content Include="images\arrow_up_blue.gif" />
+    <Content Include="images\BackOffice\checkbl.gif" />
+    <Content Include="images\BackOffice\crossbl.gif" />
+    <Content Include="images\BackOffice\delete.png" />
+    <Content Include="images\BackOffice\edit.png" />
+    <Content Include="images\BackOffice\export.gif" />
+    <Content Include="images\BackOffice\files_add.gif" />
+    <Content Include="images\BackOffice\files_exec.gif" />
+    <Content Include="images\BackOffice\files_export.gif" />
+    <Content Include="images\BackOffice\files_image.gif" />
+    <Content Include="images\BackOffice\files_import.gif" />
+    <Content Include="images\BackOffice\file_apply.gif" />
+    <Content Include="images\BackOffice\file_delete.gif" />
+    <Content Include="images\BackOffice\file_edit.gif" />
+    <Content Include="images\BackOffice\file_find.gif" />
+    <Content Include="images\BackOffice\file_lock.gif" />
+    <Content Include="images\BackOffice\find.GIF" />
+    <Content Include="images\BackOffice\flag_en.png" />
+    <Content Include="images\BackOffice\flag_id.png" />
+    <Content Include="images\BackOffice\flag_th.png" />
+    <Content Include="images\BackOffice\help.GIF" />
+    <Content Include="images\BackOffice\info.png" />
+    <Content Include="images\BackOffice\movedown.GIF" />
+    <Content Include="images\BackOffice\MOVEUP.GIF" />
+    <Content Include="images\BackOffice\save.GIF" />
+    <Content Include="images\BackOffice\saveas.gif" />
+    <Content Include="images\BackOffice\warning.gif" />
+    <Content Include="images\Calendar_scheduleHS.png" />
+    <Content Include="images\checkbl.gif" />
+    <Content Include="images\clear.gif" />
+    <Content Include="images\close1.jpg" />
+    <Content Include="images\collapse.jpg" />
+    <Content Include="images\collapse_blue.jpg" />
+    <Content Include="images\crossbl.gif" />
+    <Content Include="images\delete.png" />
+    <Content Include="images\delete2.png" />
+    <Content Include="images\delete2_16.png" />
+    <Content Include="images\desktop.png" />
+    <Content Include="images\desktop_16.png" />
+    <Content Include="images\disk_blue.png" />
+    <Content Include="images\expand.jpg" />
+    <Content Include="images\expand_blue.jpg" />
+    <Content Include="images\false-red.png" />
+    <Content Include="images\footerbg2000.gif" />
+    <Content Include="images\headerbg2000.gif" />
+    <Content Include="images\headerbg2000.jpg" />
+    <Content Include="images\headerbg2000x2000.gif" />
+    <Content Include="images\headerstub.jpg" />
+    <Content Include="images\headerstub1.jpg" />
+    <Content Include="images\help.jpg" />
+    <Content Include="images\homebandbg2000.gif" />
+    <Content Include="images\icon_close.png" />
+    <Content Include="images\icon_new.png" />
+    <Content Include="images\icon_publish.png" />
+    <Content Include="images\icon_save.png" />
+    <Content Include="images\icon_setting.png" />
+    <Content Include="images\icon_unpublish.png" />
+    <Content Include="images\loading.gif" />
+    <Content Include="images\loading1.gif" />
+    <Content Include="images\loading3.gif" />
+    <Content Include="images\loading4.gif" />
+    <Content Include="images\loginbg.gif" />
+    <Content Include="images\logo_admin.gif" />
+    <Content Include="images\Members\no_photo.jpg" />
+    <Content Include="images\menudot.gif" />
+    <Content Include="images\menudotplus.gif" />
+    <Content Include="images\menu_minus.gif" />
+    <Content Include="images\menu_plus.gif" />
+    <Content Include="images\navigate_left.ico" />
+    <Content Include="images\navigate_left2.ico" />
+    <Content Include="images\navigate_right.ico" />
+    <Content Include="images\navigate_right2.ico" />
+    <Content Include="images\no_photo.jpg" />
+    <Content Include="images\Products\10mcdonalds-Baked-Hot-Apple-Pie.png" />
+    <Content Include="images\Products\10mcdonalds-Filet-O-Fish.png" />
+    <Content Include="images\Products\11mcdonalds-Southern-Style-Crispy-Chicken-Sandwich.png" />
+    <Content Include="images\Products\12mcdonalds-Angus-Mushroom-Swiss-Snack-Wrap.png" />
+    <Content Include="images\Products\13mcdonalds-Angus-Chipotle-BBQ-Bacon-Snack-Wrap.png" />
+    <Content Include="images\Products\14mcdonalds-Chipotle-BBQ-Snack-Wrap-Crispy.png" />
+    <Content Include="images\Products\1main_fries.png" />
+    <Content Include="images\Products\1mcdonalds-Angus-Bacon-Cheese.png" />
+    <Content Include="images\Products\1mcdonalds-Bacon-Egg-Cheese-Biscuit-Regular-Size-Biscuit.png" />
+    <Content Include="images\Products\1mcdonalds-Cinnamon-Melts.png" />
+    <Content Include="images\Products\1mcdonalds-Premium-Bacon-Ranch-Salad-without-chicken.png" />
+    <Content Include="images\Products\1nestle-water-bottle.png" />
+    <Content Include="images\Products\2coca-cola-bottle.png" />
+    <Content Include="images\Products\2mcdonalds-Angus-Deluxe.png" />
+    <Content Include="images\Products\2mcdonalds-Apple-Dippers.png" />
+    <Content Include="images\Products\2mcdonalds-Chicken-McBites-Snack-Size.png" />
+    <Content Include="images\Products\2mcdonalds-Premium-Bacon-Ranch-Salad-with-Crispy-Chicken.png" />
+    <Content Include="images\Products\2mcdonalds-Sausage-Biscuit-with-Egg-Regular-Size-Biscuit.png" />
+    <Content Include="images\Products\3diet-coke.png" />
+    <Content Include="images\Products\3mcdonalds-Angus-Mushroom-Swiss.png" />
+    <Content Include="images\Products\3mcdonalds-Chicken-Selects-Premium-Breast-Strips-3-pc.png" />
+    <Content Include="images\Products\3mcdonalds-Premium-Bacon-Ranch-Salad-with-Grilled-Chicken.png" />
+    <Content Include="images\Products\3mcdonalds-Sausage-Biscuit-Regular-Size-Biscuit.png" />
+    <Content Include="images\Products\3mcdonalds-Snack-Size-Fruit-Walnut-Salad.png" />
+    <Content Include="images\Products\4iced_coffee.png" />
+    <Content Include="images\Products\4mcdonalds-Big-Breakfast-Regular-Size-Biscuit.png" />
+    <Content Include="images\Products\4mcdonalds-Chicken-McNuggets-4-piece.png" />
+    <Content Include="images\Products\4mcdonalds-Chocolate-Chip-Cookie.png" />
+    <Content Include="images\Products\4mcdonalds-Premium-Caesar-Salad-without-chicken.png" />
+    <Content Include="images\Products\4mcdonalds-Quarter-Pounder-with-Cheese.png" />
+    <Content Include="images\Products\5iced_tea.png" />
+    <Content Include="images\Products\5mcdonalds-Big-Breakfast-with-Hotcakes-Regular-Size-Biscuit-.png" />
+    <Content Include="images\Products\5mcdonalds-Hamburger.png" />
+    <Content Include="images\Products\5mcdonalds-Oatmeal-Raisin-Cookie.png" />
+    <Content Include="images\Products\5mcdonalds-Premium-Southwest-Salad-without-chicken.png" />
+    <Content Include="images\Products\6English-Milk-Tea.png" />
+    <Content Include="images\Products\6mcdonalds-Cheeseburger.png" />
+    <Content Include="images\Products\6mcdonalds-Hotcakes-.png" />
+    <Content Include="images\Products\6mcdonalds-Kiddie-Cone.png" />
+    <Content Include="images\Products\6mcdonalds-Side-Salad.png" />
+    <Content Include="images\Products\7mcdonalds-Double-Cheeseburger.png" />
+    <Content Include="images\Products\7mcdonalds-Hash-Brown.png" />
+    <Content Include="images\Products\7mcdonalds-Strawberry-Sundae.png" />
+    <Content Include="images\Products\8mcdonalds-Hot-Caramel-Sundae.png" />
+    <Content Include="images\Products\8mcdonalds-Premium-Crispy-Chicken-Classic-Sandwich.png" />
+    <Content Include="images\Products\9mcdonalds-Big-N-Tasty.png" />
+    <Content Include="images\Products\9mcdonalds-Hot-Fudge-Sundae.png" />
+    <Content Include="images\promiselogo.gif" />
+    <Content Include="images\spacer.gif" />
+    <Content Include="images\Staffs\no_photo.jpg" />
+    <Content Include="images\synaturegroup.jpg" />
+    <Content Include="images\treeview1.gif" />
+    <Content Include="images\true_green_24.png" />
+    <Content Include="images\wait.gif" />
+    <Content Include="images\warning_24.png" />
+    <Content Include="images\window_add16.png" />
+    <Content Include="images\window_add24.png" />
+    <Content Include="images\window_delete16.png" />
+    <Content Include="images\window_delete24.png" />
+    <Content Include="images\window_edit16.png" />
+    <Content Include="images\window_edit24.png" />
+    <Content Include="js\jquery-1.4.2.min.js" />
+    <Content Include="js\jquery-ui-1.8.5.custom.min.js" />
+    <Content Include="ManageData\ConvertEngineTable.aspx" />
+    <Content Include="ManageData\ExportData.aspx" />
+    <Content Include="ManageData\ExportImportData.aspx" />
+    <Content Include="ManageData\ImportData.aspx" />
+    <Content Include="StyleSheet\admin.css" />
+    <Content Include="StyleSheet\adminMenu.css" />
+    <Content Include="StyleSheet\DateDropdownJScript.js" />
+    <Content Include="StyleSheet\Default.css" />
+    <Content Include="StyleSheet\MasterPage.css" />
+    <Content Include="StyleSheet\style.css" />
+    <Content Include="StyleSheet\StyleSheet.css" />
+    <Content Include="StyleSheet\StyleSheet2.css" />
+    <Content Include="StyleSheet\webscript.js" />
+    <Content Include="Web.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Default.aspx.vb">
+      <SubType>ASPXCodeBehind</SubType>
+      <DependentUpon>Default.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Default.aspx.designer.vb">
+      <DependentUpon>Default.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="ManageData\ConvertEngineTable.aspx.designer.vb">
+      <DependentUpon>ConvertEngineTable.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="ManageData\ConvertEngineTable.aspx.vb">
+      <DependentUpon>ConvertEngineTable.aspx</DependentUpon>
+      <SubType>ASPXCodebehind</SubType>
+    </Compile>
+    <Compile Include="ManageData\ExportData.aspx.designer.vb">
+      <DependentUpon>ExportData.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="ManageData\ExportData.aspx.vb">
+      <DependentUpon>ExportData.aspx</DependentUpon>
+      <SubType>ASPXCodebehind</SubType>
+    </Compile>
+    <Compile Include="ManageData\ExportImportData.aspx.designer.vb">
+      <DependentUpon>ExportImportData.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="ManageData\ExportImportData.aspx.vb">
+      <DependentUpon>ExportImportData.aspx</DependentUpon>
+      <SubType>ASPXCodebehind</SubType>
+    </Compile>
+    <Compile Include="ManageData\ImportData.aspx.designer.vb">
+      <DependentUpon>ImportData.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="ManageData\ImportData.aspx.vb">
+      <DependentUpon>ImportData.aspx</DependentUpon>
+      <SubType>ASPXCodebehind</SubType>
+    </Compile>
+    <Compile Include="My Project\AssemblyInfo.vb" />
+    <Compile Include="My Project\Application.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Application.myapp</DependentUpon>
+    </Compile>
+    <Compile Include="My Project\Resources.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Resources.resx</DependentUpon>
+    </Compile>
+    <Compile Include="My Project\Settings.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="My Project\Resources.resx">
+      <Generator>VbMyResourcesResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.vb</LastGenOutput>
+      <CustomToolNamespace>My.Resources</CustomToolNamespace>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="images\BackOffice\Thumbs.db" />
+    <None Include="images\Members\Thumbs.db" />
+    <None Include="images\Products\Thumbs.db" />
+    <None Include="images\Staffs\Thumbs.db" />
+    <None Include="images\Thumbs.db" />
+    <None Include="My Project\Application.myapp">
+      <Generator>MyApplicationCodeGenerator</Generator>
+      <LastGenOutput>Application.Designer.vb</LastGenOutput>
+    </None>
+    <None Include="My Project\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <CustomToolNamespace>My</CustomToolNamespace>
+      <LastGenOutput>Settings.Designer.vb</LastGenOutput>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="App_Data\" />
+    <Folder Include="images\Members\1\" />
+    <Folder Include="images\Members\2\" />
+    <Folder Include="images\Members\3\" />
+    <Folder Include="images\Members\4\" />
+    <Folder Include="images\Members\5\" />
+  </ItemGroup>
+  <PropertyGroup>
+    <VisualStudioVersion Condition="'$(VisualStudioVersion)' == ''">10.0</VisualStudioVersion>
+    <VSToolsPath Condition="'$(VSToolsPath)' == ''">$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v$(VisualStudioVersion)</VSToolsPath>
+  </PropertyGroup>
+  <Import Project="$(MSBuildBinPath)\Microsoft.VisualBasic.targets" />
+  <Import Project="$(VSToolsPath)\WebApplications\Microsoft.WebApplication.targets" Condition="'$(VSToolsPath)' != ''" />
+  <Import Project="$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v10.0\WebApplications\Microsoft.WebApplication.targets" Condition="false" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+  <ProjectExtensions>
+    <VisualStudio>
+      <FlavorProperties GUID="{349c5851-65df-11da-9384-00065b846f21}">
+        <WebProjectProperties>
+          <UseIIS>False</UseIIS>
+          <AutoAssignPort>True</AutoAssignPort>
+          <DevelopmentServerPort>54720</DevelopmentServerPort>
+          <DevelopmentServerVPath>/</DevelopmentServerVPath>
+          <IISUrl>
+          </IISUrl>
+          <NTLMAuthentication>False</NTLMAuthentication>
+          <UseCustomServer>False</UseCustomServer>
+          <CustomServerUrl>
+          </CustomServerUrl>
+          <SaveServerSettingsInUserFile>False</SaveServerSettingsInUserFile>
+        </WebProjectProperties>
+      </FlavorProperties>
+    </VisualStudio>
+  </ProjectExtensions>
+</Project>

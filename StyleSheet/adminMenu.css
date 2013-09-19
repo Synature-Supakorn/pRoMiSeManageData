@@ -1,0 +1,28 @@
+a {
+	font-size:11px;
+	line-height:15px;
+	font-family: arial,Verdana,Geneva, Arial, Helvetica, sans-serif,Verdana, ;
+	font-weight:normal,bold;
+	text-decoration : none;
+}
+a:hover {
+	text-decoration : underline;
+	color: #BAC40B;
+}
+td{
+	font-family: arial,geneva,helvetica;
+	font-weight: normal;
+}
+.text2{
+	font-size:11px;
+	line-height:15px;
+	font-family: arial,Verdana,Geneva, Arial, Helvetica, sans-serif,Verdana, ;
+	color:white;
+	text-decoration : none;
+}
+.text{
+	font-size:11px;
+	line-height:15px;
+	font-family:sans-serif;
+	font-family: arial,Verdana,Geneva, Arial, Helvetica, sans-serif,Verdana, ;
+}

@@ -1,0 +1,102 @@
+.tahoma11red {
+	font-family: tahoma, "MS Sans Serif", "Microsoft Sans Serif", Verdana;
+	font-size: 11px;
+	color: #9e0b0e;
+}
+.tahoma10black {
+	font-family: Tahoma, "Microsoft Sans Serif", Verdana, Arial;
+	font-size: 10px;
+	color: #000000;
+}
+input {
+	font-family: Tahoma, "Microsoft Sans Serif", Verdana, Arial;
+	font-size: 10px;
+
+}
+.tahoma10gray {
+	font-family: Tahoma, "Microsoft Sans Serif", Verdana, Arial;
+	font-size: 10px;
+	color: #818181;
+}
+.tahoma12gray {
+	font-family: Tahoma, "Microsoft Sans Serif", Verdana, Arial;
+	font-size: 12px;
+	color: #737373;
+}
+.tahoma12black {
+	font-family: Tahoma,"Microsoft Sans Serif",  Verdana, Arial;
+	font-size: 12px;
+	color: #000000;
+}
+.tahoma12red {
+	font-family: Tahoma, "Microsoft Sans Serif", Verdana, Arial;
+	font-size: 12px;
+	color: #9e0b0e;
+}
+
+a.linkGray:link { color: #818181; text-decoration: none}
+a.linkGray:visited { color: #818181; text-decoration: none}
+a.linkGray:active { color: #818181; text-decoration: underline}
+a.linkGray:hover { color: #818181; text-decoration: underline}
+
+a.linkGray1:link { color: #818181; text-decoration: underline}
+a.linkGray1:visited { color: #818181; text-decoration: underline}
+a.linkGray1:active { color: #818181; text-decoration: underline}
+a.linkGray1:hover { color: #b7b7b7; text-decoration: underline}
+
+a.linkGrayS:link { font-size: 12px;color: #818181; text-decoration: underline}
+a.linkGrayS:visited { font-size: 12px;color: #818181; text-decoration: underline}
+a.linkGrayS:active { font-size: 12px;color: #818181; text-decoration: underline}
+a.linkGrayS:hover { font-size: 12px;color: #b7b7b7; text-decoration: underline}
+
+a.linkRed:link { color: #A0410D; text-decoration: none}
+a.linkRed:visited { color: #A0410D; text-decoration: none}
+a.linkRed:active { color: #A0410D; text-decoration: underline}
+a.linkRed:hover { color: #A0410D; text-decoration: underline}
+
+.verdana10black {
+	font-family: Verdana, Tahoma, "Microsoft Sans Serif", Arial;
+	font-size: 10px;
+	color: #000000;
+}
+.verdana10gray {
+	font-family: Verdana, Tahoma, "Microsoft Sans Serif", Arial;
+	font-size: 10px;
+	color: #737373;
+}
+.tahoma10gray2 {
+
+	font-family: Tahoma, "Microsoft Sans Serif", Verdana, Arial;
+	font-size: 10px;
+	color: #737373;
+}
+.tahoma11gray2 {
+
+	font-family: Tahoma, "Microsoft Sans Serif", Verdana, Arial;
+	font-size: 11px;
+	color: #737373;
+}
+.tahoma10brown {
+
+	font-family: Tahoma, "Microsoft Sans Serif", Verdana, Arial;
+	font-size: 10px;
+	color: #603913;
+}
+.tahoma11brown {
+
+	font-family: Tahoma, "Microsoft Sans Serif", Verdana, Arial;
+	font-size: 11px;
+	color: #603913;
+}
+.verdana10gray2 {
+
+	font-family: Verdana, Tahoma, "Microsoft Sans Serif", Arial;
+	font-size: 10px;
+	color: #b4b4b4;
+}
+.verdana10red {
+
+	font-family: Verdana, Tahoma, "Microsoft Sans Serif", Arial;
+	font-size: 10px;
+	color: #b63d00;
+}

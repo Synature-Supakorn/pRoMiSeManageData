@@ -1,0 +1,370 @@
+﻿*
+{
+    padding: 0;
+    margin: 0;
+}
+body
+{
+    background: rgb(200,211,220);
+    font-family: Tahoma;
+    font-size: 80%;
+    min-width: 950px;
+}
+
+
+#header-wrap, #container, #footer
+{
+    min-height: 2em;
+    margin-right: 0;
+    border-bottom: solid 1px rgb(50, 50, 50);
+    border-right: solid 1px rgb(50, 50, 50);
+    padding: 0.5em;
+}
+#header-wrap
+{
+    background: rgb(250, 250, 250);
+    background-image: url(../images/headerbg2000.gif);
+}
+#container
+{
+    min-height: 20em;
+    background: rgb(255,255,255);
+}
+
+#footer
+{
+    background: rgb(150, 150, 150);
+    background-image: url(../images/footerbg2000.gif);
+}
+address
+{
+    font-style: normal;
+}
+.PostHeader
+{
+    clear: left;
+    padding-right: 2em;
+    padding-left: 2em;
+    padding-bottom: 0;
+    padding-top: 0;
+    position: relative;
+}
+
+.content
+{
+    margin: 0 2em;
+}
+.content:after
+{
+    content: ".";
+    display: block;
+    clear: both;
+    visibility: hidden;
+    height: 0;
+}
+.left
+{
+    width: 2em;
+    float: left;
+}
+.right
+{
+    width: 2em;
+    float: right;
+}
+
+/* ------------------ menu --------------------*/
+#menu
+{
+    float: left;
+    width: 100%;
+    border-bottom: 1px solid #8DA5FF;
+    margin-bottom: 0.1em;
+}
+#menu ul
+{
+    margin: 0;
+    padding: 2em 0 0 0;
+    list-style: none;
+}
+#menu li
+{
+    float: left;
+    background-image: url(../images/tab_active_left.gif);
+    background-repeat: no-repeat;
+    margin: 0 1px 0 0;
+    padding: 0 0 0 8px;
+}
+#menu a
+{
+    float: left;
+    display: block;
+    background-image: url(../images/tab_active_right.gif);
+    background-repeat: no-repeat;
+    background-position: right top;
+    padding: 0.2em 10px 0.2em 0;
+    text-decoration: none;
+    font-weight: bold;
+    color: #FFFFFF;
+}
+
+#HyperLinkClass #menu li.HyperLinkClass, #HyperLinkDept #menu li.HyperLinkDept, #HyperLinkSubDept #menu li.HyperLinkSubDept, #HyperLinkModel #menu li.HyperLinkModel, #HyperLinkSesson #menu li.HyperLinkSeason, #HyperLinkColor #menu li.HyperLinkColor, #HyperLinkSize #menu li.HyperLinkSize
+{
+    background-image: url(../images/tab_active_left.gif);
+}
+#HyperLinkClass #menu li.HyperLinkClass a, #HyperLinkDept #menu li.HyperLinkDept a, #HyperLinkSubDept #menu li.HyperLinkSubDept a, #HyperLinkModel #menu li.HyperLinkModel a, #HyperLinkSesson #menu li.HyperLinkSeason a, #HyperLinkColor #menu li.HyperLinkColor a, #HyperLinkSize #menu li.HyperLinkSize a
+{
+    background-image: url(../images/tab_active_right.gif);
+    background-color: transparent;
+    color: #FFFFFF;
+}
+
+/* ----------------------------------------------*/
+
+/* ------------------content --------------------*/
+.CON
+{
+    padding-right: 0.5em;
+    padding-left: 0;
+    background: #fff;
+    float: left;
+    padding-bottom: 0.2em;
+    padding-top: 0.5em;
+    width: 100%;
+}
+
+.SC
+{
+    padding-right: 1em;
+    padding-left: 0;
+    float: left;
+    padding-bottom: 0.5em;
+    width: 37%;
+    padding-top: 0;
+}
+.SR
+{
+    padding: 0;
+    float: right;
+    width: 62%;
+    position: relative;
+    top: 0;
+    left: 0;
+}
+.leftcontent
+{
+    padding-right: 1em;
+    padding-left: 0;
+    float: left;
+    padding-bottom: 0.5em;
+    width: 33%;
+    padding-top: 0;
+}
+.rightcontent
+{
+    padding: 0;
+    float: right;
+    width: 66%;
+    position: relative;
+    top: 0;
+    left: 0;
+}
+
+.box
+{
+    padding-right: 0.5em;
+    padding-left: 0;
+    background: #fff;
+    float: left;
+    padding-bottom: 0.5em;
+    padding-top: 0;
+    width: 100%;
+}
+
+.boxleft
+{
+    padding-right: 0.5em;
+    padding-left: 0;
+    float: left;
+    padding-bottom: 0.5em;
+    width: 49%;
+    padding-top: 0;
+}
+.boxright
+{
+    padding: 0;
+    float: right;
+    width: 50%;
+    position: relative;
+    top: 0;
+    left: 0;
+}
+
+/* ----------------------------------------------*/
+.line
+{
+    border-bottom: double 1px rgb(50, 50, 50);
+}
+.personalInfo
+{
+    padding: 0.3em;
+    border: solid 1px #5e80b9;
+    margin-top: 0.2em;
+}
+
+.personalInfo legend
+{
+    padding: 0.2em;
+}
+
+.personalInfo textarea
+{
+    border: solid 1px #5e80b9;
+    font: normal 11px Arial, Verdana, Sans-serif;
+}
+/* 1 match(es) for: *//* Rule 3 of embedded stylesheet */
+H1
+{
+    font-weight: normal;
+    font-size: 2em;
+    margin-bottom: 0.5em;
+}
+/* 21 match(es) for: *//* Rule 4 of embedded stylesheet */
+P
+{
+    margin-bottom: 0.5em;
+}
+
+/* 4 match(es) for: *//* Rule 6 of embedded stylesheet */
+LEGEND
+{
+    font-size: 1em;
+    margin-bottom: 0.5em;
+}
+/* 1 match(es) for: *//* Rule 7 of embedded stylesheet */
+A
+{
+    color: rgb(33,33,33);
+    text-decoration: none;
+}
+/* 0 match(es) for: *//* Rule 8 of embedded stylesheet */
+A:hover
+{
+    color: Blue;
+    text-decoration: underline;
+}
+.TextRed
+{
+    color: rgb(255,0,0);
+}
+/* 4 match(es) for: *//* Rule 10 of embedded stylesheet */
+DIV UL
+{
+    margin-bottom: 0.5em;
+    width: 100%;
+    list-style-type: none;
+}
+/* 20 match(es) for: *//* Rule 11 of embedded stylesheet */
+DIV UL LI
+{
+    margin-bottom: 1em;
+}
+/* 19 match(es) for: *//* Rule 12 of embedded stylesheet */
+DIV UL LI LABEL
+{
+    float: left;
+    width: 30%; /*color: rgb(255,0,121);*/
+    text-align: left;
+}
+/* 19 match(es) for: *//* Rule 13 of embedded stylesheet */
+DIV UL LI P
+{
+    float: right;
+    margin: 0;
+    width: 70%;
+    text-align: left;
+}
+/* 0 match(es) for: *//* Rule 14 of embedded stylesheet */
+DIV UL LI:unknown
+{
+    clear: both;
+    display: block;
+    visibility: hidden;
+    height: 0;
+    content: ".";
+}
+/* 10 match(es) for: *//* Rule 15 of embedded stylesheet */
+FORM INPUT[type='text']
+{
+    width: 150px;
+}
+
+/*FORM FIELDSET
+{
+    border-top-style: none;
+    border-right-style: none;
+    border-left-style: none;
+    border-bottom-style: none;
+}*/
+.imagepreview
+{
+    position: relative;
+    visibility: visible;
+    width: 150;
+    height: 150;
+    clip: rect(0,300,300,0);
+}
+
+.watermarked
+{
+    padding: 2px 0 0 2px;
+    border: 1px solid #BEBEBE;
+    background-color: #F0F8FF;
+    color: gray;
+}
+/*
+Color
+*/
+.White
+{
+    background-color: #FFFFFF;
+}
+.Snow
+{
+    background-color: #FFFAFA;
+}
+.GhostWhite
+{
+    background-color: #F8F8FF;
+}
+.FloralWhite
+{
+    background-color: #FFFAF0;
+}
+.WhiteSmoke
+{
+    background-color: #F5F5F5;
+}
+.Gainsboro
+{
+    background-color: #DCDCDC;
+}
+.OldLace
+{
+    background-color: #FDF5E6;
+}
+.modalPopup2
+{
+    background-color: #FFFFFF;
+    border-width: 3px;
+    border-style: solid;
+    border-color: Gray;
+    padding: 3px;
+    width: 350px;
+}
+.modalPopupGrey
+{
+    background: Gray;
+    filter: alpha(opacity=60);
+    opacity: 0.6;
+}

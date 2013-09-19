@@ -1,0 +1,47 @@
+﻿
+/* ----------------------------------------------*/
+.personalInfo
+{
+    padding: 0.3em;
+    border: solid 1px #5e80b9;
+    margin-top: 0.2em;
+}
+
+.personalInfo legend
+{
+    padding: 0.2em;
+}
+
+.personalInfo textarea
+{
+    border: solid 1px #5e80b9;
+    font: normal 11px Arial, Verdana, Sans-serif;
+}
+DIV UL LI
+{
+    margin-bottom: 0.2em;
+}
+/* 19 match(es) for: *//* Rule 12 of embedded stylesheet */
+DIV UL LI LABEL
+{
+    float: left;
+    width: 30%; /*color: rgb(255,0,121);*/
+    text-align: left;
+}
+/* 19 match(es) for: *//* Rule 13 of embedded stylesheet */
+DIV UL LI P
+{
+    float: right;
+    margin: 0;
+    width: 70%;
+    text-align: left;
+}
+/* 0 match(es) for: *//* Rule 14 of embedded stylesheet */
+DIV UL LI:unknown
+{
+    clear: both;
+    display: block;
+    visibility: hidden;
+    height: 0;
+    content: ".";
+}

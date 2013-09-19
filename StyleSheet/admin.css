@@ -1,0 +1,623 @@
+﻿body
+{
+    background: #fff;
+    padding-bottom: 1px;
+    font-size: 13px;
+    background-color: #C8D3DC;
+    margin: 0;
+}
+body, td, th
+{
+    font-family: Tahoma, Verdana, Arial;
+    font-weight: normal;
+    font-size: 13px;
+}
+html, body
+{
+    height: 95%;
+}
+#minwidth
+{
+    min-width: 960px;
+}
+.clr
+{
+    clear: both;
+    overflow: hidden;
+    height: 0;
+}
+
+form
+{
+    margin: 0;
+    padding: 0;
+}
+h1
+{
+    margin: 0;
+    padding-bottom: 8px;
+    color: #0B55C4;
+    font-size: 20px;
+    font-weight: bold;
+}
+h3
+{
+    font-size: 13px;
+}
+/* -- a: styles ------------------------------ */
+a:link
+{
+    color: #0B55C4;
+    text-decoration: none;
+}
+a:visited
+{
+    color: #0B55C4;
+    text-decoration: none;
+}
+a:hover
+{
+    text-decoration: underline;
+}
+/* -- fieldset styles ------------------------------ */
+fieldset
+{
+    margin-bottom: 10px;
+    border: 1px #ccc solid;
+    padding: 5px;
+    text-align: left;
+}
+fieldset p
+{
+    margin: 10px 0px;
+}
+legend
+{
+    color: #0B55C4;
+    font-size: 12px;
+    font-weight: bold;
+}
+/* -- input styles ------------------------------
+input, select
+{
+    font-size: 13px;
+    border: 1px solid silver;
+    height: 22px;
+	font-family: Tahoma;
+}*/
+textarea
+{
+    font-size: 13px;
+    font-family: Tahoma;
+}
+button
+{
+    font-size: 13px;
+    height: 25px;
+    font-family: Tahoma;
+}
+
+input.disabled
+{
+    background-color: #F0F0F0;
+    font-family: Tahoma;
+}
+
+input.button
+{
+    cursor: pointer;
+}
+input.submit
+{
+    height: 25px;
+    font-size: 13px;
+    font-family: Tahoma;
+    cursor: pointer;
+}
+input:focus, select:focus, textarea:focus
+{
+    background-color: #ffd;
+}
+/* -- Table gray styles ------------------------------ */
+
+table.gray
+{
+    border-collapse: collapse;
+    width: 100%;
+}
+table.gray td, table.gray th, table.gray tr
+{
+    border: solid 1px #999;
+    height: 25px;
+}
+
+table.gray thead th
+{
+    text-align: center;
+    background: #F0F0F0;
+    color: #000;
+    height: 25px;
+}
+
+table.gray thead a:hover
+{
+    text-decoration: none;
+}
+
+table.gray thead th img
+{
+    vertical-align: middle;
+}
+
+table.gray tbody th
+{
+    font-weight: bold;
+}
+
+table.gray tbody tr:nth-child(even)
+{
+    background: #fff;
+    height: 25px;
+}
+table.gray tbody tr:nth-child(odd)
+{
+    background: #f9f9f9;
+    height: 25px;
+}
+table.gray tbody tr:nth-child(even):hover td, table.gray tbody tr:nth-child(odd):hover td
+{
+    background-color: #FFFFDD;
+}
+table.gray tfoot tr
+{
+    text-align: center;
+    color: #000;
+    height: 25px;
+}
+table.gray tfoot td, table.gray tfoot th
+{
+    background-color: #F3F3F3;
+    text-align: center;
+    color: #000;
+}
+
+table.gray td.order
+{
+    text-align: center;
+    white-space: nowrap;
+}
+table.gray td.order span
+{
+    float: left;
+    display: block;
+    width: 20px;
+    text-align: center;
+}
+
+table.gray .pagination
+{
+    display: table;
+    padding: 0;
+    margin: 0 auto;
+}
+
+/* -- Table green  styles ------------------------------ */
+
+table.green
+{
+    border-collapse: collapse;
+    width: 100%;
+}
+table.green td, table.green th, table.green tr
+{
+    border: solid 1px #6EAD37;
+    height: 25px;
+}
+
+table.green thead th
+{
+    text-align: center;
+    background: #B3CC82;
+    color: #fff;
+    height: 25px;
+}
+
+table.green thead a:hover
+{
+    text-decoration: none;
+}
+
+table.green thead th img
+{
+    vertical-align: middle;
+}
+
+table.green tbody th
+{
+    font-weight: bold;
+}
+
+table.green tbody tr:nth-child(even)
+{
+    background: #fff;
+    height: 25px;
+}
+table.green tbody tr:nth-child(odd)
+{
+    background: #E1EBCE;
+    height: 25px;
+}
+table.green tbody tr:nth-child(even):hover td, table.green tbody tr:nth-child(odd):hover td
+{
+    background-color: #FFFFDD;
+}
+table.green tfoot tr
+{
+    text-align: center;
+    color: #000;
+    height: 25px;
+}
+table.green tfoot td, table.green tfoot th
+{
+    background-color: #B3CC82;
+    text-align: center;
+    color: #fff;
+}
+
+table.green td.order
+{
+    text-align: center;
+    white-space: nowrap;
+}
+table.green td.order span
+{
+    float: left;
+    display: block;
+    width: 20px;
+    text-align: center;
+}
+
+table.green .pagination
+{
+    display: table;
+    padding: 0;
+    margin: 0 auto;
+}
+/* -- Table Red  styles ------------------------------ */
+
+table.red
+{
+    border-collapse: collapse;
+    width: 100%;
+}
+table.red td, table.red th, table.red tr
+{
+    border: solid 1px #6F0000;
+    height: 25px;
+}
+
+table.red thead th
+{
+    text-align: center;
+    background: #C0504D;
+    color: #fff;
+    height: 25px;
+}
+
+table.red thead a:hover
+{
+    text-decoration: none;
+}
+
+table.red thead th img
+{
+    vertical-align: middle;
+}
+
+table.red tbody th
+{
+    font-weight: bold;
+}
+
+table.red tbody tr:nth-child(even)
+{
+    background: #fff;
+    height: 25px;
+}
+table.red tbody tr:nth-child(odd)
+{
+    background: #EFD3D2;
+    height: 25px;
+}
+table.red tbody tr:nth-child(even):hover td, table.red tbody tr:nth-child(odd):hover td
+{
+    background-color: #FFFFDD;
+}
+table.red tfoot tr
+{
+    text-align: center;
+    color: #000;
+    height: 25px;
+}
+table.red tfoot td, table.red tfoot th
+{
+    background-color: #C0504D;
+    text-align: center;
+    color: #fff;
+}
+
+table.red td.order
+{
+    text-align: center;
+    white-space: nowrap;
+}
+table.red td.order span
+{
+    float: left;
+    display: block;
+    width: 20px;
+    text-align: center;
+}
+
+table.red .pagination
+{
+    display: table;
+    padding: 0;
+    margin: 0 auto;
+}
+/* blue */
+table.blue
+{
+    border-collapse: collapse;
+    width: 100%;
+}
+table.blue td, table.blue th, table.blue tr
+{
+    border: solid 1px #999;
+    height: 25px;
+}
+
+table.blue thead th
+{
+    text-align: center;
+    background: #507093;
+    color: #fff;
+    height: 25px;
+}
+table.blue tbody th
+{
+    text-align: center;
+    background: #507093;
+    color: #fff;
+    height: 25px;
+}
+table.blue thead a:hover
+{
+    text-decoration: none;
+}
+
+table.blue thead th img
+{
+    vertical-align: middle;
+}
+
+table.blue tbody th
+{
+    text-align: center;
+    background: #507093;
+    color: #fff;
+    height: 25px;
+}
+
+table.blue tbody tr:nth-child(even)
+{
+    background: #fff;
+    height: 25px;
+}
+table.blue tbody tr:nth-child(odd)
+{
+    background: #eff3fb;
+    height: 25px;
+}
+table.blue tbody tr:nth-child(even):hover td, table.blue tbody tr:nth-child(odd):hover td
+{
+    background-color: #FFFFDD;
+}
+table.blue tfoot tr
+{
+    text-align: center;
+    color: #000;
+    height: 25px;
+}
+table.blue tfoot td, table.blue tfoot th
+{
+    background-color: #F3F3F3;
+    text-align: center;
+    color: #000;
+}
+
+table.blue td.order
+{
+    text-align: center;
+    white-space: nowrap;
+}
+table.blue td.order span
+{
+    float: left;
+    display: block;
+    width: 20px;
+    text-align: center;
+}
+
+table.blue .pagination
+{
+    display: table;
+    padding: 0;
+    margin: 0 auto;
+}
+
+a
+{
+    font-size: 12px;
+    line-height: 15px;
+    font-family: arial,Verdana,Geneva, Arial, Helvetica, sans-serif,Verdana,;
+    font-weight: normal;
+    text-decoration: none;
+}
+a:hover
+{
+    text-decoration: underline;
+    color: #BAC40B;
+}
+.tdHeader
+{
+    font-size: 12px;
+    line-height: 15px;
+    font-family: arial,Verdana,Geneva, Arial, Helvetica, sans-serif,Verdana;
+    font-weight: normal;
+    color: White;
+}
+.menuText
+{
+    font-size: 11px;
+    line-height: 15px;
+    font-family: arial,Verdana,Geneva, Arial, Helvetica, sans-serif,Verdana;
+    text-decoration: none;
+    color: Black;
+}
+.headerText
+{
+    font-size: 15px;
+    font-family: sans-serif;
+    font-family: Verdana,Geneva, Arial, Helvetica, sans-serif,Verdana;
+    color: black;
+    font-weight: bold;
+}
+.text
+{
+    font-size: 13px;
+    line-height: 15px;
+    font-family: sans-serif;
+    font-family: Arial,Verdana,Geneva, Arial, Helvetica, sans-serif,Verdana,;
+    color: black;
+}
+.redText
+{
+    font-size: 13px;
+    line-height: 15px;
+    font-family: sans-serif;
+    font-family: Arial,Verdana,Geneva, Arial, Helvetica, sans-serif,Verdana,;
+    color: red;
+}
+.smallRedText
+{
+    font-size: 11px;
+    line-height: 15px;
+    font-family: sans-serif;
+    font-family: Arial,Verdana,Geneva, Arial, Helvetica, sans-serif,Verdana,;
+    color: red;
+}
+.disabledText
+{
+    font-size: 13px;
+    line-height: 15px;
+    font-family: sans-serif;
+    font-family: Verdana,Geneva, Arial, Helvetica, sans-serif,Verdana,;
+    color: #909090;
+}
+.disabledBoldText
+{
+    font-size: 13px;
+    line-height: 15px;
+    font-family: sans-serif;
+    font-family: Verdana,Geneva, Arial, Helvetica, sans-serif,Verdana,;
+    color: #909090;
+    font-weight: bold;
+}
+.itemText
+{
+    font-size: 13px;
+    line-height: 15px;
+    font-family: sans-serif;
+    font-family: Verdana,Geneva, Arial, Helvetica, sans-serif,Verdana,;
+    color: black;
+}
+.boldText
+{
+    font-size: 13px;
+    line-height: 15px;
+    font-family: sans-serif;
+    font-family: Verdana,Geneva, Arial, Helvetica, sans-serif,Verdana,;
+    color: black;
+    font-weight: bold;
+}
+.requireText
+{
+    font-size: 13px;
+    line-height: 15px;
+    font-family: sans-serif;
+    font-family: Verdana,Geneva, Arial, Helvetica, sans-serif,Verdana,;
+    color: red;
+}
+.errorText
+{
+    font-size: 10px;
+    line-height: 15px;
+    font-family: sans-serif;
+    font-family: Verdana,Geneva, Arial, Helvetica, sans-serif,Verdana,;
+    color: red;
+}
+.smalltext
+{
+    font-size: 11px;
+    line-height: 15px;
+    font-family: sans-serif;
+    font-family: arial,Verdana,Geneva, Arial, Helvetica, sans-serif,Verdana,;
+}
+.smallboldtext
+{
+    font-size: 11px;
+    line-height: 15px;
+    font-family: sans-serif;
+    font-family: arial,Verdana,Geneva, Arial, Helvetica, sans-serif,Verdana,;
+    font-weight: bold;
+}
+.smallTdHeader
+{
+    font-size: 11px;
+    line-height: 15px;
+    font-family: sans-serif;
+    font-family: arial,Verdana,Geneva, Arial, Helvetica, sans-serif,Verdana,;
+    font-weight: normal;
+    color: White;
+}
+.buttn
+{
+    font-size: 10px;
+    width: 155px;
+}
+
+@media print
+{
+
+    .noprint
+    {
+        display: none;
+    }
+
+}
+
+/* -- Table Param styles ------------------------------ */
+
+table.TableParam
+{
+    border-collapse: collapse;
+    width: 100%;
+    border: solid 1px rgb(236, 233,216);
+}
+table.TableParam td, table.TableParam th, table.TableParam tr
+{
+    height: 25px;
+    padding: 1px;
+    margin: 0px;
+}
